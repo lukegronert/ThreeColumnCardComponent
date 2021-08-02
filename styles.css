@@ -3,7 +3,7 @@ body {
   background-color: hsl(0, 0%, 95%);
 }
 
-#content {
+.content {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -13,39 +13,52 @@ body {
 }
 
 @media (min-width: 900px) {
-  #content {
+  .content {
     flex-direction: row;
     margin: 10% 20%;
     max-width: 1300px;
   }
 }
 
-#sedansCard {
+.sedansCard {
   background-color: hsl(31, 77%, 52%);
 }
-#sedansCard a {
+.sedansCard a {
   color: hsl(31, 77%, 52%);
 }
 
-#suvCard {
+.suvCard {
   background-color: hsl(184, 100%, 22%);
 }
 
-#suvCard a {
+.suvCard a {
   color: hsl(184, 100%, 22%);
 }
 
-#luxuryCard {
+.luxuryCard {
   background-color: hsl(179, 100%, 13%);
 }
 
-#luxuryCard a {
+.luxuryCard a {
   color: hsl(179, 100%, 13%);
 }
 
-#suvCard a:hover,
-#sedansCard a:hover,
-#luxuryCard a:hover {
+.sedansCard,
+.suvCard,
+.luxuryCard {
+  position: relative;
+}
+
+.suvCard a,
+.sedansCard a,
+.luxuryCard a {
+  position: absolute;
+  bottom: 0;
+}
+
+.suvCard a:hover,
+.sedansCard a:hover,
+.luxuryCard a:hover {
   background-color: transparent;
   color: hsl(0, 0%, 95%);
 }
@@ -70,18 +83,20 @@ body {
 .card p {
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 900px) {
   .card p {
     font-size: 0.8rem;
+    margin-bottom: 3rem;
   }
 }
 
 .card a {
   background-color: hsl(0, 0%, 95%);
-  border-radius: 20px;
+  border-radius: 50px;
   text-decoration: none;
   outline: none;
   border: none;
@@ -91,11 +106,12 @@ body {
   border: 2px solid hsl(0, 0%, 95%);
   box-sizing: border-box;
   cursor: pointer;
-  align-self: flex-end;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
   .card a {
-    width: 7rem;
+    width: 7.5rem;
   }
 }
