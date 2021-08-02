@@ -77,15 +77,16 @@ body {
   border: none;
   padding: 5%;
   font-family: "Lexend Deca", sans-serif;
-  width: 50%;
+  width: 10rem;
   border: 2px solid hsl(0, 0%, 95%);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 @media (min-width: 900px) {
   .card button {
     margin-top: 20%;
-    width: 60%;
+    width: 7rem;
   }
 }
 
