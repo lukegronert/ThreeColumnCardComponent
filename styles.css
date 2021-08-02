@@ -43,6 +43,13 @@ body {
   color: hsl(179, 100%, 13%);
 }
 
+#suvCard a:hover,
+#sedansCard a:hover,
+#luxuryCard a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
 .card {
   padding: 10%;
 }
@@ -53,10 +60,11 @@ body {
   }
 }
 
-.card h1 {
+.card h2 {
   color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .card p {
@@ -73,7 +81,6 @@ body {
 
 .card a {
   background-color: hsl(0, 0%, 95%);
-  color: inherit;
   border-radius: 20px;
   text-decoration: none;
   outline: none;
@@ -84,15 +91,11 @@ body {
   border: 2px solid hsl(0, 0%, 95%);
   box-sizing: border-box;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 @media (min-width: 900px) {
   .card a {
     width: 7rem;
   }
-}
-
-.card a:hover {
-  background-color: transparent;
-  color: hsl(0, 0%, 95%) !important;
 }
