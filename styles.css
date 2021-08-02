@@ -8,13 +8,15 @@ body {
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  margin: 10% 3%;
+  margin: 10% auto;
+  max-width: 400px;
 }
 
 @media (min-width: 900px) {
   #content {
     flex-direction: row;
     margin: 10% 20%;
+    max-width: 1300px;
   }
 }
 
