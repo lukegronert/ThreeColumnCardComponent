@@ -1,0 +1,64 @@
+body {
+  font-size: 15px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 3%;
+}
+
+#sedansCard {
+  background-color: hsl(31, 77%, 52%);
+}
+#sedansCard button {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvCard {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#suvCard button {
+  color: hsl(184, 100%, 22%);
+}
+
+#luxuryCard {
+  background-color: hsl(179, 100%, 13%);
+}
+
+#luxuryCard button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card {
+  padding: 10%;
+}
+
+.card h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 5%;
+  font-family: "Lexend Deca", sans-serif;
+  width: 50%;
+  border: 2px solid hsl(0, 0%, 95%);
+  box-sizing: border-box;
+}
+
+.card button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%) !important;
+}
