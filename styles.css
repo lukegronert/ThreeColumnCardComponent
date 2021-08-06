@@ -3,6 +3,10 @@ body {
   background-color: hsl(0, 0%, 95%);
 }
 
+/* ======================================== */
+/* Main content container styling */
+/* ======================================== */
+
 .content {
   display: flex;
   flex-direction: column;
@@ -19,6 +23,10 @@ body {
     max-width: 1300px;
   }
 }
+
+/* ======================================== */
+/* Card styling */
+/* ======================================== */
 
 .sedansCard {
   background-color: hsl(31, 77%, 52%);
@@ -54,13 +62,6 @@ body {
 .luxuryCard a {
   position: absolute;
   bottom: 0;
-}
-
-.suvCard a:hover,
-.sedansCard a:hover,
-.luxuryCard a:hover {
-  background-color: transparent;
-  color: hsl(0, 0%, 95%);
 }
 
 .card {
@@ -113,4 +114,15 @@ body {
   .card a {
     width: 7.5rem;
   }
+}
+
+/* ======================================== */
+/* Hover effects */
+/* ======================================== */
+
+.suvCard a:hover,
+.sedansCard a:hover,
+.luxuryCard a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
 }
